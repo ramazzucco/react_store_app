@@ -1,0 +1,75 @@
+{
+    "LANG": {
+        "SPANISH": "español",
+        "ENGLISH": "ingles"
+    },
+    "NAVLINKS": {
+        "HOME": "principal",
+        "USERS": "usuarios",
+        "TEAMS": "equipos"
+    },
+    "WIDGET": {
+        "PRODUCTS": "productos",
+        "USERS": "usuarios",
+        "INCOME": "ganancias",
+        "GOALKEEPER": "arquero",
+        "TOTAL_PLAYERS": "Total jugadores",
+        "DEFENDERS": "Defensores",
+        "MIDFIELDERS": "Mediocampistas",
+        "FORWARDS": "Delanteros"
+    },
+    "WORDS": {
+        "USERS": "usuarios",
+        "PLAYERS": "Jugadores",
+        "DELETE": "eliminar",
+        "CREATING": "creando",
+        "DELETING": "eliminando",
+        "EDITING": "editando",
+        "BACK": "Volver",
+        "SORT_BY": "Ordenar por"
+    },
+    "BUTTONS": {
+        "CANCEL": "Cancelar",
+        "NEW_USER": "nuevo usuario",
+        "YES_DELETE": "Si, eliminar!",
+        "CREATE": "crear",
+        "EDIT": "editar"
+    },
+    "PLAYER_TABLE": {
+        "AGE": "edad",
+        "FULLNAME": "nombre completo",
+        "POSITION": "posicion",
+        "ROLE": "rol",
+        "TEAM": "equipo",
+        "TSHIRT_NUMBER": "numero de camiseta",
+        "ACTIONS": "acciones"
+    },
+    "PLAYER_EDIT": {
+        "TITLE": "Editar '%fullname%'"
+    },
+    "PLAYER_CREATE": {
+        "TITLE": "Crear usuario"
+    },
+    "PLAYER_MODAL": {
+        "TEXT": "Usuario %user% ?"
+    },
+    "TEAMS": {
+        "TITLE": "Equipos",
+        "ARGENTINE": "Argentina",
+        "BRAZIL": "Brasil",
+        "GERMANY": "Alemania"
+    },
+    "ERRORS": {
+        "USER_NOT_FOUND": "No se encontro el usuario",
+        "USER_NOT_SAVED": "No se pudo guardar el usuario",
+        "USER_ALREADY_EXIST": "El usuario ya existe",
+        "INVALID_ID": "El ID no es valido",
+        "INTERNAL_SERVER_ERROR": "Algo salio mal, intentelo nuevamente mas tarde",
+        "NO_TEAM_SELECTED": "No se ha seleccionado ningun equipo"
+    },
+    "SUCCESS_MESSAGES": {
+        "USER_CREATED": "%fullname% fue creado exitosamente.",
+        "USER_UPDATED": "%fullname% fue actualizado exitosamente.",
+        "USER_DELETED": "%fullname% fue eliminado exitosamente."
+    }
+}

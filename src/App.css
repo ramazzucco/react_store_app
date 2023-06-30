@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  outline: none;
+  text-decoration: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
+a:visited {
+  color: unset;
 }
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.shimmer {
+  width: 100%;
+  height: 100%;
+  animation-duration: 2.2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: shimmer;
+  animation-timing-function: linear;
+  background: #ddd;
+  background: linear-gradient(to right, #F6F6F6 8%, #F0F0F0 18%, #F6F6F6 33%);
+  background-size: 1200px 100%;
+}
+
+@-webkit-keyframes shimmer {
+  0% {
+      background-position: -100% 0;
+  }
+  100% {
+      background-position: 100% 0;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+      background-position: -1200px 0;
+  }
+  100% {
+      background-position: 1200px 0;
+  }
+}
+
+.wrapper_simple_loader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.wrapper_simple_loader .simple_loader {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #FFF;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+input {
+  border: 2px solid #666;
+  outline: none;
+  border-radius: 3px;
+}
+input:hover {
+  border: 2px solid #8d67bd;
+}
+input:focus {
+  border: 2px solid #6418c1;
+}
+
+@media (prefers-color-scheme: light) {
+  .page, input {
+    background: var(--bg-color);
+    color: var(--text-color);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .page, input {
+    background: var(--bg-color);
+    color: var(--text-color);
+  }
+  button {
+    color: var(--text-color);
+  }
+}
+
+.light .page, .light input {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+.light button {
+  color: var(--text-color);
+}
+
+.dark .page, .dark input {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+.dark button {
+  color: var(--text-color);
 }

@@ -1,0 +1,104 @@
+header.header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: var(--primary-color);
+    z-index: 1000;
+}
+
+.links {
+    display: flex;
+    gap: 1rem;
+    margin-right: auto;
+}
+
+.links a {
+    color: var(--text-dark);
+    text-transform: capitalize;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.links a:hover {
+    background: #FFF;
+    color: var(--primary-color);
+}
+
+.language {
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+.language select {
+    padding: .5rem;
+    border-radius: 5px;
+    min-width: 100px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.checkbox-wrapper-63 input[type="checkbox"] {
+    visibility: hidden;
+    display: none;
+}
+
+.checkbox-wrapper-63 *,
+.checkbox-wrapper-63 ::after,
+.checkbox-wrapper-63 ::before {
+    box-sizing: border-box;
+}
+
+/* The switch - the box around the slider */
+.checkbox-wrapper-63 .switch {
+    font-size: 1rem;
+    position: relative;
+    display: inline-block;
+    width: 4em;
+    height: 2em;
+    margin-right: 2rem;
+}
+
+/* The slider */
+.checkbox-wrapper-63 .slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background-color: #eee;
+    transition: 0.4s;
+    border-radius: 0.5em;
+    box-shadow: 0 0.2em #dfd9d9;
+}
+
+.checkbox-wrapper-63 .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.5em;
+    width: 1.4em;
+    border-radius: 0.3em;
+    left: 0.3em;
+    bottom: 0.7em;
+    background-color: lightsalmon;
+    transition: 0.4s;
+    box-shadow: 0 0.4em #bcb4b4;
+}
+
+.checkbox-wrapper-63 .slider:hover::before {
+    box-shadow: 0 0.2em #bcb4b4;
+    bottom: 0.5em;
+}
+
+.checkbox-wrapper-63 input:checked+.slider::before {
+    transform: translateX(2em);
+    background: lightgreen;
+}
+
+@media (prefers-color-scheme: dark) {
+    header.header {
+        background: var(--primary-color);
+    }
+}

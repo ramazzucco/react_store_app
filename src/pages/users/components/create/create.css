@@ -1,0 +1,69 @@
+.edit_user {
+    padding: 2rem;
+}
+
+.shimmer {
+    flex: 1 1 100px;
+    height: 35px;
+}
+
+form {
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.form_item {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+label {
+    flex: 1 1 100px;
+    align-self: center;
+}
+
+input {
+    flex: 1 1 300px;
+    padding: .5rem;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.buttons button {
+    display: grid;
+    min-width: 120px;
+    background: none;
+    padding: .5rem 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.buttons button[type=submit] {
+    background: rgb(21, 21, 195);
+    border-color: rgb(21, 21, 195);
+    color: #FFF;
+}
+
+.buttons button[type=submit]:disabled {
+    opacity: .5;
+}
+
+@media(max-width: 768px) {
+    .buttons {
+        flex-direction: row-reverse;
+    }
+
+    .buttons button {
+        width: 100%;
+    }
+}

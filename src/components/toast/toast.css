@@ -1,0 +1,55 @@
+.wrapper_toast {
+    position: absolute;
+    top: -100%;
+    right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: 1px solid rgba(0,0,0,0.133);
+    z-index: 1000;
+    transition: .5s ease-in;
+}
+
+.wrapper_toast.error {
+    background: #f8c8c8;
+    color: #a74040;
+}
+
+.wrapper_toast.success {
+    background: #e5f5e7;
+    color: #40a74a;
+}
+
+.wrapper_toast.show {
+    top: 2rem;
+}
+
+.wrapper_toast .icon {
+    display: grid;
+    place-items: center;
+}
+
+.wrapper_toast .info {
+    display: flex;
+    flex-direction: column;
+    margin-right: 3rem;
+}
+
+.wrapper_toast .buttons {
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.wrapper_toast .buttons .close {
+    border-radius: 50%;
+    padding: .5rem;
+    cursor: pointer;
+}
+.wrapper_toast .buttons .close:hover {
+    background: rgba(0,0,0,0.033);
+}

@@ -1,0 +1,75 @@
+{
+    "LANG": {
+        "SPANISH": "spanish",
+        "ENGLISH": "english"
+    },
+    "NAVLINKS": {
+        "HOME": "home",
+        "USERS": "users",
+        "TEAMS": "teams"
+    },
+    "WIDGET": {
+        "PRODUCTS": "products",
+        "USERS": "users",
+        "INCOME": "income",
+        "GOALKEEPER": "Goalkeeper",
+        "TOTAL_PLAYERS": "Total players",
+        "DEFENDERS": "Defenders",
+        "MIDFIELDERS": "Midfielders",
+        "FORWARDS": "Forwards"
+    },
+    "WORDS": {
+        "USERS": "users",
+        "PLAYERS": "Players",
+        "DELETE": "delete",
+        "CREATING": "creating",
+        "DELETING": "deleting",
+        "EDITING": "editing",
+        "BACK": "Back",
+        "SORT_BY": "Sort by"
+    },
+    "BUTTONS": {
+        "CANCEL": "Cancel",
+        "NEW_USER": "New user",
+        "YES_DELETE": "Yes, delete!",
+        "CREATE": "create",
+        "EDIT": "edit"
+    },
+    "PLAYER_TABLE": {
+        "AGE": "age",
+        "FULLNAME": "fullname",
+        "POSITION": "position",
+        "ROLE": "role",
+        "TEAM": "team",
+        "TSHIRT_NUMBER": "tshirt number",
+        "ACTIONS": "actions"
+    },
+    "PLAYER_EDIT": {
+        "TITLE": "Edit '%fullname%'"
+    },
+    "PLAYER_CREATE": {
+        "TITLE": "Create user"
+    },
+    "PLAYER_MODAL": {
+        "TEXT": "User %user% ?"
+    },
+    "TEAMS": {
+        "TITLE": "Teams",
+        "ARGENTINE": "Argentine",
+        "BRAZIL": "Brazil",
+        "GERMANY": "Germany"
+    },
+    "ERRORS": {
+        "USER_NOT_FOUND": "User not found",
+        "USER_NOT_SAVED": "User could not save",
+        "USER_ALREADY_EXIST": "User has already exist",
+        "INVALID_ID": "The ID is invalid",
+        "INTERNAL_SERVER_ERROR": "Something is wrong, try again later",
+        "NO_TEAM_SELECTED": "No team was selected"
+    },
+    "SUCCESS_MESSAGES": {
+        "USER_CREATED": "%fullname% was successfuly created.",
+        "USER_UPDATED": "%fullname% was successfuly updated.",
+        "USER_DELETED": "%fullname% was successfuly deleted."
+    }
+}

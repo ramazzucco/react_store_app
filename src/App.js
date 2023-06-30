@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import { Outlet } from "react-router-dom";
+import AppStore from "./_store/app-store";
 
-function App() {
+import "./App.css";
+
+import Header from "./layout/header/Header";
+import Toast from "./components/toast/Toast";
+
+export default function App() {
+  const [theme, setTheme] = React.useState('');
+
+  useEffect(() => {
+    AppStore.themeState$.subscribe(state => {
+      if(state) setTheme(state.value);
+    });
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`App ${theme}`}>
+      <Header />
+      <Toast />
+      <Outlet />
     </div>
   );
 }
-
-export default App;

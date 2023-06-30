@@ -1,0 +1,8 @@
+.button_back {
+    width: 100px;
+    padding: .5rem 1rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    color: #FFF !important;
+    margin-right: auto;
+}
